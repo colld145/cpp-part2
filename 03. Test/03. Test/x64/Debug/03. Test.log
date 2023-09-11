@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\cpp-part2\03. Test\03. Test\main.cpp(280,14): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  03. Test.vcxproj -> C:\cpp-part2\03. Test\x64\Debug\03. Test.exe
