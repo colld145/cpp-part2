@@ -191,49 +191,105 @@ int main(){
     арифметичне. Визначити кількість нулів у цьому числі.
     Спілкування з користувачем організувати через меню.*/
 
-    int number = 0; bool exit = false;
-    cout << "Enter a number: ";
-    cin >> number;
+    // int number = 0; bool exit = false;
+    // cout << "Enter a number: ";
+    // cin >> number;
 
-    while (!exit)
+    // while (!exit)
+	// {
+	// 	int choice = 0;
+	// 	cout << "\n1. Print amount of numbers\n2. Print sum and average\n3. Print amount of nulls\n0. Exit\n\nEnter a choice: ";
+	// 	cin >> choice;
+    //     string number_str = to_string(number);
+    //     int amount_of_numbers = 0;
+    //     int amount_of_nulls = 0;
+    //     int avg = 0; int sum = 0;
+    //     switch (choice)
+    //     {
+    //     case 1:
+	// 		for (int i = 0; i < number_str.length(); i++)
+    //         {
+    //             amount_of_numbers++;
+    //         }
+    //         cout << "Amount of numbers in '" << number << "' : " << amount_of_numbers << endl;
+    //         break;
+    //     case 2:
+	// 		for (int i = 0; i < number_str.length(); i++)
+    //         {
+    //             sum += number_str[i] - '0';
+    //         }
+	// 		avg = sum / number_str.length();
+	// 		cout << "Sum of numbers in '" << number << "' : " << sum << endl;
+    //         cout << "Average value of numbers in '" << number << "' : " << avg << endl;
+    //         break;
+    //     case 3:
+    //         for (int i = 0; i < number_str.length(); i++)
+    //         {
+    //             if(number_str[i] == '0'){
+    //                 amount_of_nulls++;
+    //             }
+    //         }
+    //         cout << "Amount of nulls in '" << number << "' : " << amount_of_nulls << endl;
+    //         break;
+    //     case 0:
+    //         cout << "Bye!" << endl;
+    //         exit = true;
+    //         break;
+    //     default:
+    //         cout << "Incorrect choice! Try again." << endl;
+    //         break;
+    //     }
+    // }
+
+	// ---------------------------------------------------------------
+
+	/*Завдання 2. Написати програму, яка виводить на екран
+	шахову дошку із заданим розміром клітинки.*/
+	int board_size = 0;
+	cout << "Enter a board size: ";
+	cin >> board_size;
+
+	for (int i = 0; i < 6; i++)
 	{
-		int choice = 0;
-		cout << "\n1. Print amount of numbers\n2. Print sum and average\n3. Print amount of nulls\n0. Exit\n\nEnter a choice: ";
-		cin >> choice;
-        string number_str = to_string(number);
-        int amount_of_numbers = 0;
-        int amount_of_nulls = 0;
-        int temp = 0;
-        switch (choice)
-        {
-        case 1:
-            for (int i = 0; i < number_str.length(); i++)
-            {
-                amount_of_numbers++;
-            }
-            cout << "Amount of numbers in '" << number << "' : " << amount_of_numbers << endl;
-            break;
-        case 2:
-            
-            break;
-        case 3:
-            for (int i = 0; i < number_str.length(); i++)
-            {
-                if(number_str[i] == '0'){
-                    amount_of_nulls++;
-                }
-            }
-            cout << "Amount of nulls in '" << number << "' : " << amount_of_nulls << endl;
-            break;
-        case 0:
-            cout << "Bye!" << endl;
-            exit = true;
-            break;
-        default:
-            cout << "Incorrect choice! Try again." << endl;
-            break;
-        }
-    }
+		if(i < 3){
+			for (int j = 0; j < board_size * 8; j++)
+			{
+				if(j % 2 == 0){
+					for (int k = 0; k < board_size; k++)
+					{
+						cout << "*";
+					}
+				}
+				else if(j % 2 != 0){
+					for (int m = 0; m < board_size; m++)
+					{
+						cout << "_";
+					}
+				}
+			}
+		}
+		else if(i >= 3){
+			for (int j = 0; j < board_size * 8; j++)
+			{
+				if(j % 2 != 0){
+					for (int k = 0; k < board_size; k++)
+					{
+						cout << "*";
+					}
+				}
+				else if(j % 2 == 0){
+					for (int m = 0; m < board_size; m++)
+					{
+						cout << "_";
+					}
+				}
+			}
+		}
+		
+		cout << endl;
+	}
+	
+
 
     return 0;
 }
