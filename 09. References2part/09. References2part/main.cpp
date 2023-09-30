@@ -1,6 +1,6 @@
 #include <iostream>
 #include <iomanip>
-#include <Windows.h>
+//#include <Windows.h>
 using namespace std;
 
 void SetPos(int x, int y)
