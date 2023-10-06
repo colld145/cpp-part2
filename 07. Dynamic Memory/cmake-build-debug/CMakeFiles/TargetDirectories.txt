@@ -1,0 +1,3 @@
+/Users/macbook/Documents/cpp-part2/07. Dynamic Memory/cmake-build-debug/CMakeFiles/07__Dynamic_Memory.dir
+/Users/macbook/Documents/cpp-part2/07. Dynamic Memory/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/macbook/Documents/cpp-part2/07. Dynamic Memory/cmake-build-debug/CMakeFiles/rebuild_cache.dir
